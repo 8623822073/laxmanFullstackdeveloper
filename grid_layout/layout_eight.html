@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header"
+        "hero content"
+        "sidebar content"
+        "images post"
+        "footer footer";
+    }
+    .header{
+        background-color: yellow;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: header;
+    }
+    .hero{
+        background-color: rebeccapurple;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: hero;
+        height: 200px;
+        
+    }
+    .sidebar{
+        background-color: green;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: sidebar;
+        
+        
+    }
+    .content{
+        background-color: brown;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: content;
+        
+    }
+    .extra_content{
+        background-color: gray;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: extra_content;
+    }
+    .iamges{
+        background-color: aqua;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: images;
+
+    }
+    .post{
+        background-color: brown;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: post;
+        
+    }
+    .footer{
+        background-color: lawngreen;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="hero">HERO</div>
+        <div class="sidebar">SIDEBAR</div>
+        <div class="content">CONTENT</div>
+        <div class="extra_content">EXTRA CONTENT</div>
+        <div class="iamges">IMAGES</div>
+        <div class="post">POST</div>
+        <div class="footer">FOOTER</div>
+
+
+
+    </div>
+</body>
+</html>

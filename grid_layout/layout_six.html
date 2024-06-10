@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: "aside header header"
+        "aside box-one box-two"
+        "footer-one footer-one footer-one"
+        "footer-two footer-two footer-two";
+        
+
+    }
+    .header{
+        background-color: yellow;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: header;
+        
+    }
+    .aside{
+        background-color: green;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: aside;
+    }
+    .box-one{
+        background-color: rebeccapurple;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: box-one;
+        
+
+    }
+    .box-two{
+        background-color: lime;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: box-two;
+    }
+    .footer-one{
+        background-color: blue;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: footer-one;
+    }
+    .footer-two{
+        background-color: gray;
+        text-align: center;
+        border-radius: 10px;
+        grid-area: footer-two;
+    }
+    @media(max-width:550px)
+    {
+        .container{
+            grid-template-columns: 1;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr ;
+            grid-template-areas: "header"
+            "aside"
+            "box-one"
+            "box-two"
+            "footer-one"
+            "footer-two";
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="aside">ASIDE</div>
+        <div class="box-one">BOX-ONE</div>
+        <div class="box-two">BOX-TWO</div>
+        <div class="footer-one">FOOTER-ONE</div>
+        <div class="footer-two">FOOTER-TWO</div>
+
+    </div>
+
+</body>
+</html>
+

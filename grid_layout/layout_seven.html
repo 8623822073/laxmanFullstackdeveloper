@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: "header header header"
+        "side-zero article-one  article-four"
+        "side-one article-one article-four"
+        "side-two article-two article-four" 
+        "side-two article-three article-four"
+         "footer footer footer";
+    }
+    .header{
+        background-color: yellow;
+        text-align: center;
+        grid-area: header;
+        border-radius: 10px;
+    }
+    .side-zero{
+        background-color: aqua;
+        text-align: center;
+        grid-area: side-zero;
+        border-radius: 10px;
+        
+    }
+    .side-one{
+        background-color: lawngreen;
+        text-align: center;
+        grid-area: side-one;
+        border-radius: 10px;
+    }
+    .side-two{
+        background-color: red;
+        text-align: center;
+        grid-area: side-two;
+        border-radius: 10px;
+    }
+    .article-one{
+        background-color: blue;
+        text-align: center;
+        grid-area: article-one;
+        border-radius: 10px;
+    }
+    .article-two{
+        background-color:lightblue;
+        text-align: center;
+        grid-area: article-two;
+        border-radius: 10px;
+    }
+    .article-three{
+        background-color: gray;
+        text-align: center;
+        grid-area: article-three;
+        border-radius: 10px;
+    }
+    .article-four{
+        background-color: green;
+        text-align: center;
+        grid-area: article-four;
+        border-radius: 10px;
+    }
+    .footer{
+        background-color: lightcoral;
+        text-align: center;
+        grid-area: footer;
+        border-radius: 10px;
+    }
+    @media(max-width:600px)
+    {
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-areas: "header"
+            "side-zero"
+            "side-one"
+            "side-two"
+            "article-one"
+            "article-two"
+            "article-three"
+            "article-four"
+            "footer";
+        }
+    }
+    
+</style>
+<body>
+    <div class="container">
+    <div class="header">HEADER</div>
+    <div class="side-zero">SIDE-ZERO</div>
+    <div class="side-one">SIDE-ONE</div>
+    <div class="side-two">SIDE-TWO</div>
+    <div class="article-one">ARTCILE-ONE</div>
+    <div class="article-two">ARTICLE-TWO</div>
+    <div class="article-three">ARTICLE-THREE</div>
+    <div class="article-four">ARTICLE-FOUR</div>
+    <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
