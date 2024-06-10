@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            border-radius: 10px;
+            height: 100vh;
+            gap: 5px;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            grid-template-rows: 0.4fr 0.4fr 1fr 0.2fr;
+            grid-template-areas: "header header header header"
+                "navigation navigation navigation navigation "
+                "sidebar sidebar box-one box-two"
+                "footer footer footer footer"
+
+
+            ;
+        }
+
+        .header {
+            background-color: yellow;
+            grid-area: header;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+
+
+        }
+
+        .navigation {
+            background-color: red;
+            grid-area: navigation;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+
+        }
+
+        .sidebar {
+            background-color: aqua;
+            grid-area: sidebar;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 10px;
+
+        }
+
+        .box-one {
+            background-color: green;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 10px;
+
+        }
+
+        .box-two {
+            background-color: grey;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 10px;
+
+        }
+
+        .footer {
+            background-color: blue;
+            grid-area: footer;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+
+        }
+
+        @media(max-width:650px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 2fr 0.2fr 1.2fr 1.2fr 1fr;
+                grid-template-areas: "header"
+                    "navigation"
+                    "sidebar"
+                    "box-one"
+                    "box-two"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="navigation">NAVIGATION</div>
+        <div class="sidebar">SIDEBAR</div>
+        <div class="box-one">BOX-ONE</div>
+        <div class="box-two">BOX-TWO</div>
+        <div class="footer">FOOTER</div>
+
+    </div>
+</body>
+
+</html>
