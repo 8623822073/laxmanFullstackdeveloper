@@ -3,73 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>LoginForm</title>
 </head>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
         body{
-            margin-left: 0;
-        }
-        .main
-        {
-            background-color: aquamarine;
-            height: 100vh;
-            width: 100vw;
-        }
-        .header{
-                height:10%;
-                background-color: lightcoral;
-                text-align: center;
-                line-height:50px;
-                font-size: 30px;
-        }
-        .login-area{
-            height: 70%;
-            
-            
-        }
-        .footer{
-            height: 20%;
-            background-color: rgb(255, 170, 0);
-        }
-        .form
-        {
+            display: flex;
+            justify-content: center;
             align-items: center;
-        }
-        table{
-            margin-left: 500px;
-            margin-top:30px;
+            background-color: greenyellow;
+            min-height: 100vh;
+           
         }
         h1{
             text-align: center;
         }
-        button{
+        .main
+        {
+            background-color: aqua;
+            height:300px;
+            width:420px;
+        }
+        .input{
+            margin-left:40px;
+            margin-top: 20px;
+        }
+        
+                
+        #username{
+                width:250px;
+                height:22px;
+                margin-left: 20px;
+                text-align: center;
+                
+                
+        }
+        #pass{
+            height: 22px;
+            width: 250px;
+            margin-left:25px;
+            text-align: center;
+        }
+        .remember-forgot{
+            justify-content: center;
+            align-items: center;
+            margin-left:170px;
+            margin-top: 30px;
+            text-decoration: none;
+
+        }
+        #submit{
+            margin-left: 200px;
+            margin-top:10px;
+            height:30px;
+            width:70px;
+        }
+        p{
+            text-align: center;
             margin-left:50px;
         }
+        #register{
+            margin-left: 190px;
+        }
+        a{
+            text-decoration: none;
+        }
+            
+           
     </style>
 <body>
         <div class="main">
-            <div class="header">LOGIN FORM</div>
-                <div class="login-area">
-                    <table>
-                        <h1>Login Here</h1>
-                    <tr>
-                        <td><label for="User Name">User Name</label></td>
-                        <td><input type="username" placeholder="username" style="text-align: center;"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Password">Password</label></td>
-                        <td><input type="password" placeholder="password" style="text-align: center;"></td>
-                    </tr>
-                    <tr>
-                        <div>
-                        <td><button type="button" class="sign-in">SignIn</td>
-                            
-                         <td><button type="button" class="sign-up">SignUp</td></div>
-                    </tr>
-                    </table>
+            <form action="">
+                <h1>Login Form</h1>
+                <!-- for username-->
+                <div class="input">
+                        <label for="username">UserName</label>
+                        <input type="username" placeholder="username" required id="username">
+                        <i class='bx bxs-user'></i>
                 </div>
-                    <div class="footer"></div>
-                
-        </div>
+                <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="password" required id="pass">
+                        <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                        <label > <input type="checkbox">Remember Me</label><br>
+                        <a href="">Forgot Passowrd?</a>
+                </div>
+                        <button type="submit" class="btn" id="submit">Login</button>
+                <div class="register-link">
+                        <p>Don't Have an Account?</p>
+                        <a href="" id="register">Register Here</a>
+                </div>
+            </form>
+                    
+                </div>
+                    
 </body>
 </html>
