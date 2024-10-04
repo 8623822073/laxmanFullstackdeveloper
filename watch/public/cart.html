@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+
+</head>
+
+<body>
+    <!-- --------------------------------------------Section-one start-------------------------------------------------------------------------- -->
+    <section class="section-one section" id="mainpage">
+        <!-------------------------------------------------Navbar-start-------------------------------------------------->
+        <nav>
+            <div class="logo">Stylo.</div>
+            <ul class="navlink" id="navlink">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#arrivals">Arrivals</a></li>
+                <li><a href="#offer">Offers</a></li>
+                <li><a href="#collection">Collection</a></li>
+            </ul>
+            <div class="humberger" id="humberger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <!-------------------------------------------------Header Start----------------------------------------------------->
+        <header>
+            <div class="cart-container cart-page">
+                <table class="cart-table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info" id="image-one">
+                                <img src="images/three-removebg-preview.png" alt="" class="cart-img">
+                            </div>
+                            <div class="cart-details" >
+                                <p>Horizen</p>
+                                <small>Price Rs.2500</small>
+                                <a href="">remove</a>
+                            </div>
+                        </td>
+
+                        <td><input type="number" value="1"></td>
+                        <td>Rs.2500</td>
+                    </tr>
+
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/nine.jpg" alt="" class="cart-img">
+                        </div>
+                        <div class="cart-details">
+                            <p>Horizen</p>
+                            <small>Price Rs.5000</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </td>
+
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.5000</td>
+                    </tr>
+
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/watch-eight.png" alt="" class="cart-img">
+                        </div>
+                        <div class="cart-details">
+                            <p>Horizen</p>
+                            <small>Price Rs.3500</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </td>
+
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.3500</td>
+                    </tr>
+                </table>
+                <div class="total">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>Rs.15000</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>Rs.100</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>Rs.18000</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </header>
+    </section>
+    <script src="main.js"></script>
+</body>

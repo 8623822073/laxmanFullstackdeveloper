@@ -1,0 +1,55 @@
+
+.arrival-image-container img{
+    height:350px;
+    margin-top:10px;
+    width:230px;
+    
+}
+.arrival-header-heading{
+   margin-left: 20px;
+}
+.contain{
+    
+}
+td{
+   
+   padding-left:20px;
+   line-height: 30px;
+   font-size:12px;
+}
+hr{
+    border: 1px solid black;
+   
+}
+.about{
+    
+    margin-top: 10px;
+    margin-left: 15px;
+}
+li{
+    font-size:12px;
+    margin-left:30px;
+    margin-bottom: 10px;
+}
+.navlink{
+    margin-left:400px;
+    display: flex;
+
+    
+}
+nav{
+    width:80vw;
+    height:13vh;
+    display: flex;
+    align-items: center;
+   
+}
+.cart-btn{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left:60px;
+    padding: 8px 14px;
+    
+}
