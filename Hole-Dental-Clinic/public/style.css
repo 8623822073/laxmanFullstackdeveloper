@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.section{
+    min-height: 100vh;
+    width: 100%;    
+}
+nav{
+    width:100%;
+    height:15vh;
+    background-color:#e0fbfc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:70px;    
+}
+.fix{
+    position: fixed; /* Sticks the navbar to the top of the viewport */
+    top:0; /* Aligns the navbar to the top */
+    width: 100%; /* Ensures the navbar takes the full width of the viewport */
+    z-index:500;  /*Ensures the navbar stays on top of other content */
+    color: white;
+    text-align: center; /* Centers the content */
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+}
+header{
+    width: 100%;
+    height: 70vh;
+}
+.navlinks{
+    display: flex;
+    gap:20px;
+    font-size: 20px;
+}
+nav .logo{
+    padding-left:50px;
+    font-family: "Satisfy", cursive;
+    font-size:35px;
+    font-style: normal;
+    color: blue;
+}
+.navlinks li a{
+    color: black;
+    position: relative;
+    
+}
+.logo img{
+    height:70px;
+    width:90px;
+    margin-top:20px;
+}
+h1 {
+    font-family: "Satisfy", cursive;
+    font-size:25px;
+    font-style: normal;
+    color:#03045e;
+    padding-right:150px;
+    
+}
+.navlinks li a::after, .navlinks li .active::after{
+    content: "";
+    position: absolute;
+    height:2px;
+    width:100%;
+    background-color: #03045e;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: right;
+}
+.navlinks li a:hover::after,.navlinks li .active::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.line{
+    background-color: #253237;
+    height:3px;
+    width:30px;
+    margin:5px;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.section-header-container{
+    height:90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    text-align: center;
+    font-size:30px;
+    font-family: "Poppins", sans-serif;
+    font-weight:500;
+    font-style: normal;
+    background-image: url("../assets/mchinepic.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    background-attachment: fixed;
+    color:white;
+}
+.section-header-container::before{
+    content: "";
+    background:rgba(0,0,0,0.500);
+    position: absolute;
+    inset: 0; 
+}
+.head-style{
+    font-size:50px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-left:130px;
+} 
+.content{
+    z-index:2;
+}
+/*--------------- Section Two------------------ */
+.section-two-container{
+    display: flex;
+    margin-top:-40px;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.circle{
+    width:420px;
+    height:400px;
+    background-image: url("../assets/laxman-pic.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* margin-right:70px; */
+    border-radius:50%; 
+    border: 2px solid black;
+    
+}
+.profile-about{
+    
+    width:50vw;
+    height:70vh;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.profile-about h1{
+    text-align: center;
+    margin-top:10px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size:40px;
+    padding:10px;   
+
+}
+.profile-about p{
+    font-size: 20px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height:35px;
+    color: gray;
+    
+}
+
+
+
+
+
+
+
+
+/*---Media Query---*/
+@media screen and (min-width:150px) and (max-width:1200px)
+{
+    h1 {
+        font-family: "Satisfy", cursive;
+        font-size:25px;
+        font-style: normal;
+        color:#03045e;
+        padding-right:100px;
+        padding:0 30px;
+        
+    }
+    
+
+.line{
+    background-color: #253237;
+    height:6px;
+    width:40px;
+    margin:9px;
+    margin-right:120px;
+}
+
+nav{
+    width:120%;
+    height:29vh;
+    background-color:#e0fbfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+}
+.hamburger{
+    cursor: pointer;
+    display: block;    
+    margin-top:-80px;
+    padding-left:20px;
+    z-index: 5;
+}
+.navlinks{
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    background-color:#b9fbc0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;  
+    right:100%;
+    z-index:2;
+    gap:40px;
+    font-size:30px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.navlinks-active{
+    right:0;
+    
+    
+}
+.section .logo{
+    z-index: 5;
+    margin-top: -60px;
+    inset: 0;
+}
+ 
+
+}
